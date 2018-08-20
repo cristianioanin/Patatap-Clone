@@ -179,9 +179,8 @@ function onFrame(event) {
     circles[i].scale(.91);
 
     if (circles[i].area < 1) {
-      circles[i].remove(); // remove the circle from the canvas
-      circles.splice(i, 1); // remove the circle from the array
-      console.log(circles);
+      circles[i].remove();
+      circles.splice(i, 1);
     }
   };
 }
